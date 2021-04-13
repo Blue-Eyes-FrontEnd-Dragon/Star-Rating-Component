@@ -23,4 +23,6 @@ export function Rater(ratingElement) {
     stars.forEach(star => {
         star.addEventListener('mouseover', ratingHover);
     });
+
+    ratingElement.addEventListener('mouseout', resetRating);
 }
